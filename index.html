@@ -32,7 +32,7 @@
 
     <nav>
         <div
-            class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-error rounded-full mt-12">
+            class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  lg:bg-rose-500 rounded-full mt-12">
             <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li><a href="/" aria-label="Our product" title="Our product"
@@ -52,7 +52,7 @@
 
 
                     <img src="./images/logo.png" alt="">
-                    <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase">Fruit Burst</span>
+                    <span class="ml-2 text-xl font-bold tracking-wide lg:text-white uppercase">Fruit Burst</span>
                 </a>
                 <ul class="flex items-center hidden ml-auto space-x-8 lg:flex bg-white px-6 py-4 rounded-full">
                     <li><input type="text" placeholder="Search" class=" w-24 md:w-auto" /> <i
@@ -93,7 +93,7 @@
                             <h1 class="mb-5 text-2xl   md:text-6xl font-extrabold">Exotic tastes at your doorstep
                             </h1>
                             <p class="mb-5 text-sm md:text-base">We supply highly quality organic products.</p>
-                            <button class="bg-error  py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
+                            <button class="bg-rose-500  py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                             <h1 class="mb-5 text-2xl   md:text-6xl font-extrabold">Exotic tastes at your doorstep
                             </h1>
                             <p class="mb-5 text-sm md:text-base">We supply highly quality organic products.</p>
-                            <button class="bg-error py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
+                            <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                             <h1 class="mb-5 text-2xl   md:text-6xl font-extrabold">Exotic tastes at your doorstep
                             </h1>
                             <p class="mb-5 text-sm md:text-base">We supply highly quality organic products.</p>
-                            <button class="bg-error py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
+                            <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <h1 class="mb-5 text-2xl   md:text-6xl font-extrabold">Exotic tastes at your doorstep
                             </h1>
                             <p class="mb-5 text-sm md:text-base">We supply highly quality organic products.</p>
-                            <button class="bg-error py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
+                            <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-5 rounded-md">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
     <!-- relative bonous -->
     <section class="w-3/5 mx-auto  ">
         <div
-            class="hidden md:flex gap-16 justify-around bg-white rounded-xl relative -top-[90px] text-center  shadow-indigo-500/40 p-5">
+            class="hidden md:hidden lg:flex gap-16 justify-around bg-white rounded-xl relative -top-[90px] text-center  shadow-indigo-500/40 p-5">
             <div>
                 <img src="./images/fruit1.png" alt="">
                 <h4 class="pt-2">Strawberry</h4>
@@ -193,7 +193,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center ">
             <div class="text-center md:text-left">
                 <h1 class="text-2xl md:text-4xl font-extrabold">Deal of the day</h1>
-                <p class="text-sm md:text mt-5 pr:0 md:pr-96">Contrary to popular belief, is not simply random text. It
+                <p class="text-sm md:text mt-5 pr:0 md:pr-48 lg:pr-96">Contrary to popular belief, is not simply random text. It
                     has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
@@ -234,7 +234,15 @@
                     <img class="w-1/4 mx-auto" src="./images/fruit6.png" alt="">
                     <h3 class="pt-7 text-xl font-bold">12.90$ - 18.85$</h3>
                     <hr class="mx-8 mt-3">
-                    <p class="pt-8 mb-4">Apples</p>
+                    <p class="pt-8 ">Apples</p>
+                    <div class="rating mt-3">
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" checked />
+                      </div>
+                      <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
 
 
 
@@ -246,12 +254,18 @@
                             <h3 class="pt-7 text-xl font-bold">Apples</h3>
                             <p class="pt-8">Professional employees are there for you to pick the most amazing and
                                 fresh fruits.</p>
-
+                                <div class="rating mt-3">
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-rose-500" checked />
+                                  </div>
                             <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
 
                             <div class="modal-action justify-center">
                                 <button class="btn text-red-600 border border-red-500">Close</button>
-                                <button class="bg-error py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
+                                <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
                                     Now</button>
                             </div>
                         </form>
@@ -263,6 +277,13 @@
                     <h3 class="pt-7 text-xl font-bold">12.90$ - 18.85$</h3>
                     <hr class="mx-8 mt-3">
                     <p class="pt-8">Orange</p>
+                    <div class="rating mt-3">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" checked />
+                      </div>
                     <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
                     <!-- modal -->
                     <button class="text-red-500" onclick="my_modal_2.showModal()">Details</button>
@@ -272,11 +293,18 @@
                             <h3 class="pt-7 text-xl font-bold">Orange</h3>
                             <p class="pt-8">Professional employees are there for you to pick the most amazing and
                                 fresh fruits.</p>
+                                <div class="rating mt-3">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" checked />
+                                  </div>
                             <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
                             <div class="modal-action justify-center">
 
                                 <button class="btn text-red-600 border border-red-500">Close</button>
-                                <button class="bg-error py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
+                                <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
                                     Now</button>
                             </div>
                         </form>
@@ -288,6 +316,13 @@
                     <h3 class="pt-7 text-xl font-bold">12.90$ - 18.85$</h3>
                     <hr class="mx-8 mt-3">
                     <p class="pt-8">Red Dragon</p>
+                    <div class="rating mt-3">
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" checked />
+                      </div>
                     <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
                     <!--  modal -->
                     <button class="text-red-500" onclick="my_modal_3.showModal()">Details</button>
@@ -297,11 +332,18 @@
                             <h3 class="pt-7 text-xl font-bold">Red Dragon</h3>
                             <p class="pt-8">Professional employees are there for you to pick the most amazing and
                                 fresh fruits.</p>
+                                <div class="rating mt-3">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-rose-500" checked />
+                                  </div>
                             <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
 
                             <div class="modal-action justify-center">
                                 <button class="btn text-red-600 border border-red-500">Close</button>
-                                <button class="bg-error py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
+                                <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
                                     Now</button>
                             </div>
                         </form>
@@ -314,6 +356,13 @@
                     <hr class="mx-8 mt-3">
 
                     <p class="pt-8">Banana</p>
+                    <div class="rating mt-3">
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" checked />
+                      </div>
                     <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
                     <!--  modal -->
                     <button class=" text-red-500" onclick="my_modal_4.showModal()">Details</button>
@@ -323,11 +372,18 @@
                             <h3 class="pt-7 text-xl font-bold">Banana</h3>
                             <p class="pt-8">Professional employees are there for you to pick the most amazing and
                                 fresh fruits.</p>
+                                <div class="rating mt-3">
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-rose-500" checked />
+                                  </div>
                             <img class="w-1/4 mx-auto py-3" src="./images/rating.svg" alt="">
 
                             <div class="modal-action justify-center">
                                 <button class="btn text-red-600 border border-red-500">Close</button>
-                                <button class="bg-error py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
+                                <button class="bg-rose-500 py-2 px-3 md:py-3 md:px-6 rounded-md flex mx-auto">Buy
                                     Now</button>
                             </div>
                         </form>
@@ -335,14 +391,14 @@
                 </div>
             </div>
         </div>
-        <button class="bg-error text-white py-2 px-3 md:py-3 md:px-5 rounded-md flex mx-auto">Shop All</button>
+        <button class="bg-rose-500 text-white py-2 px-3 md:py-3 md:px-5 rounded-md flex mx-auto">Shop All</button>
         </div>
 
     </section>
 
     <!-- meet the team -->
     <section  class="max-w-screen-xl  rounded-xl mx-auto">
-        <div class="hero bg-center text-white rounded-xl " style="background-image: url(./images/team.png); min: 694px;">
+        <div class="hero bg-center sm:px-3 text-white rounded-xl " style="background-image: url(./images/team.png); min-height: 694px;">
 
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
@@ -358,7 +414,7 @@
                             <img class="pb-3 mx-auto w-2/5 md:w-3/5" src="./images/member1.png" alt="">
                             <h3 class="text-2xl text-white  font-bold">Awlad Hossain</h3>
                             <p class="pb-1 text-white ">Fruits Expert</p>
-                            <div class="flex gap-2 text-red-500 justify-center">
+                            <div class="flex gap-2 text-rose-500 justify-center">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-linkedin"></i>
@@ -369,7 +425,7 @@
                             <img class="pb-3 mx-auto w-2/5 md:w-3/5" src="./images/member2.png" alt="">
                             <h3 class="text-2xl font-bold text-white ">Safia Chowdhury</h3>
                             <p class="pb-1 text-white ">Fruits Expert</p>
-                            <div class="flex gap-2 text-red-500 justify-center">
+                            <div class="flex gap-2 text-rose-500 justify-center">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-linkedin"></i>
@@ -380,7 +436,7 @@
                             <img class="pb-3 mx-auto w-2/5 md:w-3/5" src="./images/member3.png" alt="">
                             <h3 class="text-2xl font-bold text-white ">Rokib Hossain</h3>
                             <p class="pb-1 text-white ">Chaity</p>
-                            <div class="flex gap-2 text-red-500 justify-center">
+                            <div class="flex gap-2 text-rose-500 justify-center">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-linkedin"></i>
@@ -391,7 +447,7 @@
                             <img class="pb-3 mx-auto w-2/5 md:w-3/5" src="./images/member4.png" alt="">
                             <h3 class="text-2xl font-bold text-white ">Awlad Hossain</h3>
                             <p class="pb-1 text-white ">Fruits Expert</p>
-                            <div class="flex gap-2 text-red-500 justify-center">
+                            <div class="flex gap-2 text-rose-500 justify-center">
                                 <i class="fa-brands  fa-facebook"></i>
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-linkedin"></i>
